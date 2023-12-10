@@ -1,0 +1,66 @@
+.principal-items{
+  background: black;
+  max-width: auto;
+  max-height: auto;
+  margin: 0;
+  padding: 30px 0px;
+ display: none;
+
+ 
+}
+
+.principal-items.ativo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  animation: slideDown .7s forwards;
+
+}
+
+.principal-items .lista-principal{
+  list-style: none;
+  grid-column: 2;
+
+}
+
+.lista-principal li{
+ margin-left: 30px;
+ padding: 5px 0px;
+ font-size: 1.2rem ;
+ font-family: Verdana;
+ color: white;
+
+}
+
+.lista-principal.ativo{
+  animation: show 1s forwards;
+ 
+}
+
+@keyframes show{
+
+from {
+  opacity:0;
+  transform: translate3d(0,-50px,0);
+}
+
+to{
+  opacity:1;
+  transform: matrix3d(0,0,0)
+}
+}
+
+
+
+  @keyframes slideDown{
+
+    from {
+      opacity:0;
+      transform: translate3d(20px,-25px,0);
+    }
+    
+    to{
+      opacity:1;
+      transform: matrix3d(0,0,0)
+    }
+    }
+

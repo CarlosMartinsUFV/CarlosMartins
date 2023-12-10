@@ -1,0 +1,129 @@
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  background: linear-gradient(to right,rgb(158, 156, 156),rgb(49, 49, 49));
+  height: 100vh;
+  width: 100vw;
+  font-family:Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 900px;
+  min-height: 600px;
+  max-height: 1000px;
+  border-radius: 10px;
+  }
+
+  .sideBar{
+    background: linear-gradient(to right,rgb(97, 31, 97),rgba(141, 17, 17, 0.979));
+    width: 300px;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 4;
+    border: 1px solid rgb(34, 34, 34);
+    box-shadow: 0 0 5px 0 black;
+  }
+
+.foto{
+  border-radius: 50%;
+  width: 60%;
+  
+}
+
+.campo-foto{
+  background: bla;
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border-bottom: 1px solid white;
+
+}
+
+
+/* LISTA */
+
+ul{
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: wheat;
+}
+
+ul li {
+  margin-top: 5px;
+  padding: 15px;
+}
+
+
+ul li:hover{
+  background: rgba(255, 217, 0, 0.849);
+  transition: .35s;
+  color: black;
+  border-radius: 10px;
+}
+
+
+/* CAMPO DESCRIÇÃO */
+
+.principal{
+height: 100%;
+width: 100%;
+border-radius: 10px;
+box-shadow: 0 0 2px 0px white;
+
+
+}
+
+.principal.ativo{
+background: black;  
+box-shadow: 0 0 2px 0px white;
+transition: 1s;
+animation: slide-in 1s;
+color: white;
+}
+
+
+.principal section {
+  display: none;
+}
+
+
+
+.js-content.ativo{
+  transition: .5s;
+  animation: slide-in 1.2s;
+  display: block !important;
+  margin: 25px;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* animação */
+
+@keyframes slide-in {
+  from {
+    transform: translatex(-100%);
+  }
+  to {
+    transform: translatex(0)
+  }
+}
+
+

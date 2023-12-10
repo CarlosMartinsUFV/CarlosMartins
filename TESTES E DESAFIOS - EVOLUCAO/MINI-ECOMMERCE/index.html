@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="principal">
+      <div>
+        <select name="produtos" id="produtos">
+          <option value=""></option>
+          <option id="notebook" value="Notebook" class="produtos-vender">
+            Notebook
+          </option>
+          <option id="bicicleta" value="Bicicleta" class="produtos-vender">
+            Bicicleta
+          </option>
+          <option id="celular" value="Celular" class="produtos-vender">
+            Celular
+          </option>
+          <option id="televisor" value="Televisor" class="produtos-vender">
+            Televisor
+          </option>
+          <option id="videogame" value="Video Game" class="produtos-vender">
+            Video Game
+          </option>
+        </select>
+      </div>
+      <div>
+        <input type="number" name="itens" min="1" id="quantidade" />Itens
+      </div>
+      <input type="submit" value="Submeter" class="submeter" /><span
+        id="semValorItens"
+      ></span>
+      <div class="valorParcial">Valor sem frete</div>
+    </div>
+    <div class="secundario">
+      <input type="text" class="CampoCEP" /> <span>CEP</span>
+      <input type="button" value="Calcular" class="calcularValorFinal" />
+
+      <div class="camposFrete">
+        <div class="frete">Frete</div>
+        <span class="cepValido"></span>
+        <div class="total">Total</div>
+      </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

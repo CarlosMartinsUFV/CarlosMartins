@@ -1,0 +1,42 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.principal{
+  display: block;
+  padding: 10px;
+}
+
+#quantidade, .submeter, .CampoCEP, .valorParcial{
+  margin: 5px 0px;
+}
+
+.frete, .total{
+  width:   100px;
+  height: 25px;
+  margin-top: 5px;
+  text-align: center;
+  border: 2px solid;
+}
+
+.secundario{
+  display: none;
+  
+
+}
+.secundario.ativo{
+  display: block;
+  padding: 0px 10px;
+}
+.camposFrete.ativo{
+  display: grid!important;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+#semValorItens, .cepValido {
+  font-size: 11px;
+  margin-left: 4px;
+}

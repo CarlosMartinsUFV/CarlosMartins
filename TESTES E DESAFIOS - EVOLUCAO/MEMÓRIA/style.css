@@ -1,0 +1,25 @@
+
+.campo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+.item{
+  background: rgb(221, 221, 233);
+  border: 1px solid;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.ativo{
+  background-color: blue;
+}
+
+.vermelho{
+  background-color: red;
+}
+
+/* .ativo{
+  background-color: aqua;
+} */

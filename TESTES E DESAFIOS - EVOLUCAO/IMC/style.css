@@ -1,0 +1,75 @@
+body{
+max-width: 999px;
+display: grid;
+justify-items: center;
+border: 20px groove black;
+border-radius: 20px;
+background-color: antiquewhite;
+
+}
+
+.campos{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px ;
+}
+.peso{
+ margin: 20px 0px;
+}
+
+
+.calculo {
+  margin: 15px 0px;
+
+}
+
+.resultado{
+background: rgb(223, 220, 220);
+border: 8px outset black;
+border-radius: 10%;
+display: grid;
+grid-template-columns: auto;
+align-items: center;
+margin: 10px 0px;
+width: 50%;
+height: 3rem;
+text-align: center;
+font-size: 20px;
+}
+
+.content{
+  display: grid;
+  justify-items: center;
+}
+
+.baixo-peso{
+  background-color: #41acacb6;
+
+  box-shadow: 2px 2px 10px rgb(70,130,180);
+}
+
+.normal-peso{
+  background-color: greenyellow;
+  box-shadow: 2px 2px 10px rgb(60, 141, 14);
+
+}
+.sobre-peso{
+  background-color: #FFA500;
+
+  box-shadow: 2px 2px 10px rgba(255, 68, 0, 0.692);
+
+}
+.obesidade{
+  background-color: #b61313da;
+  box-shadow: 2px 2px 10px rgb(139,0,0);
+  color: white;
+
+}
+
+.morbida{
+  background-color: #800000;
+  color: white;
+  box-shadow: 2px 2px 10px  black;
+
+}

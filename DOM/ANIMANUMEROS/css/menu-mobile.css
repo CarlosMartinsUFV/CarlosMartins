@@ -1,0 +1,115 @@
+
+[data-dropdown]{
+  position: relative; 
+
+}
+.dropdown-menu{
+  position: absolute;
+  top: 38px;
+  background: #e54;
+  border: 2px solid #333;
+  z-index: 200;   /*pode ser qqr numero acima de um. O número grande é para garantir que ficará acima de outros z-index acima de um*/
+}
+
+[data-dropdown] .dropdown-menu{
+  display: none;
+}
+
+[data-dropdown]:hover .dropdown-menu, 
+[data-dropdown].active .dropdown-menu{
+  display: block;
+  animation: show-up 0.3s forwards;
+}
+
+@keyframes show-up{
+  from{
+    opacity:0;
+    transform:translate3d(0,30px,0)
+  }
+
+  to{
+    opacity:1;
+    transform:translate3d(0,0px,0)
+  }
+}
+
+.dropdown-menu::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 0px;
+  height: 0px;
+  border-bottom: 10px solid #e54;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+}
+
+
+.dropdown-menu li a:hover{
+  color:white
+}
+
+[data-menu="button"]{
+  display: none;
+}
+
+@media(max-width:700px){
+
+ .js [data-menu="button"]{   /*só vai funcionar com o js funcionando */
+    display: flex;
+    background: #222;
+    border:none;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: "IBM Plex Mono", monospace ;
+    font-weight: bold;
+    color: #fff;
+    cursor:pointer;
+    margin: 10px;
+    align-items: center;
+    position: relative;
+    z-index: 300;
+  
+  }
+ 
+  .js [data-menu ="button"]::before{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    background: #fff;
+    box-shadow: 0 4px #fff, 0 -4px #fff;
+    margin-right: 4px;
+    transition: transform .3s;
+
+  }
+  .js [data-menu="button"].active::before{
+    transform: rotate(90deg);
+  }
+
+  .js #menu{
+    display: none;
+    position: absolute;
+    background: #fb5;
+    width: 160px;
+    z-index: 200;
+    padding: 60px  0px 20px 0px;
+    top: 0;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
+  }
+
+  .js #menu.active{
+    display: block;
+    animation: show-right 0.3s forwards;
+
+  }
+
+  .js .dropdown-menu{
+    position: static;
+    border: none;
+  }
+
+}

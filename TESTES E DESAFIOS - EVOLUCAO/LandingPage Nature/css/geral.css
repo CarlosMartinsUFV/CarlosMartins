@@ -1,0 +1,15 @@
+* { 
+  padding: 0;
+    margin: 0;
+  }
+  
+  body{
+  
+    /* animation: AnimationName 16s ease infinite; */
+  }
+  
+  a{
+    text-decoration: none;
+  color: inherit;   /* herdar cor do pai, no caso, da div */
+  }
+  

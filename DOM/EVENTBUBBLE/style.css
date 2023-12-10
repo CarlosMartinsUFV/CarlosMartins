@@ -1,0 +1,10 @@
+.quadrado{
+background: blue;
+height: 150px;
+width: 150px;
+}
+
+.quadrado.ativo{
+  background: green;
+
+}

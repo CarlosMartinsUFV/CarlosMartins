@@ -1,0 +1,68 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+  transition: .3s ;
+}
+
+body{
+  background: rgba(0, 0, 0, 0.219);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logotipos{
+display: flex;
+gap:25px;
+transition: .3s forwards;
+animation: slide-in 1.2s;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0)
+  }
+}
+
+
+
+
+.menu{
+  margin-top: 50%;
+  box-shadow: 0px  8px 10px rgba(0, 0, 0, 0.259);
+  z-index: 1;
+
+}
+.figura{
+  display: flex;
+  width: 125px;
+  height: 125px;
+  justify-content: center;
+  align-items: center;
+}
+
+.figura:hover::after{
+  content: "";
+  background: rgb(58, 56, 56);
+  width: 100px;
+  height: 7px;
+  margin-top: -150px;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0  4px 8px #4d4b4b88;
+}
+
+img:hover{
+  width: 120px;
+  height: 120px;
+}
